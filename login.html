@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Job Recruitment Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+<section class="form-section">
+
+    <div class="form-container">
+
+        <h2>Welcome Back</h2>
+
+        <p>Login to continue</p>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>User Role</label>
+
+                <select id="loginRole">
+
+                    <option value="jobSeeker">
+                        Job Seeker
+                    </option>
+
+                    <option value="employer">
+                        Employer
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="remember">
+
+                <label>
+
+                    <input type="checkbox" id="remember">
+
+                    Remember Me
+
+                </label>
+
+                <a href="#">
+                    Forgot Password?
+                </a>
+
+            </div>
+
+            <button
+                class="btn btn-primary"
+                type="submit">
+
+                Login
+
+            </button>
+
+        </form>
+
+        <p class="register-link">
+
+            Don't have an account?
+
+            <a href="register-jobseeker.html">
+
+                Register Here
+
+            </a>
+
+        </p>
+
+    </div>
+
+</section>
+</body>
+
+<script src="js/storage.js"></script>
+<script src="js/auth.js"></script>
+
+</html>

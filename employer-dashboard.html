@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Employer Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<aside class="sidebar">
+
+<h2>
+
+<i class="fas fa-briefcase"></i>
+
+RecruitPro
+
+</h2>
+
+<ul>
+
+<li class="active">
+
+<a href="#">
+
+<i class="fas fa-home"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="post-job.html">
+
+<i class="fas fa-plus-circle"></i>
+
+Post Job
+
+</a>
+
+</li>
+
+<li>
+
+<a href="manage-jobs.html">
+
+<i class="fas fa-list"></i>
+
+Manage Jobs
+
+</a>
+
+</li>
+
+<li>
+
+<a href="applications.html">
+
+<i class="fas fa-users"></i>
+
+Applications
+
+</a>
+
+</li>
+
+<li>
+
+<a href="company-profile.html">
+
+<i class="fas fa-building"></i>
+
+Company Profile
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#" onclick="logout()">
+
+<i class="fas fa-right-from-bracket"></i>
+
+Logout
+
+</a>
+
+</li>
+
+</ul>
+
+</aside>
+
+<main class="content">
+
+<header class="topbar">
+
+<h2>
+
+Employer Dashboard
+
+</h2>
+
+</header>
+
+<section class="welcome-card">
+
+<h2 id="welcomeName">
+
+Welcome
+
+</h2>
+
+<p>
+
+Manage your company recruitment activities from one place.
+
+</p>
+
+</section>
+
+<section class="cards">
+
+<div class="card">
+
+<i class="fas fa-briefcase"></i>
+
+<h3 id="totalJobs">
+
+0
+
+</h3>
+
+<p>Total Jobs</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-check-circle"></i>
+
+<h3 id="activeJobs">
+
+0
+
+</h3>
+
+<p>Active Jobs</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-file-alt"></i>
+
+<h3 id="applications">
+
+0
+
+</h3>
+
+<p>Applications</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-clock"></i>
+
+<h3>
+
+Today
+
+</h3>
+
+<p>Recent Activity</p>
+
+</div>
+
+</section>
+
+<section class="quick-actions">
+
+<a href="post-job.html" class="btn btn-primary">
+
+<i class="fas fa-plus"></i>
+
+Post New Job
+
+</a>
+
+<a href="manage-jobs.html" class="btn btn-secondary">
+
+Manage Jobs
+
+</a>
+
+</section>
+
+</main>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>
