@@ -1,3 +1,5 @@
+alert("jobs.js loaded");
+console.log("jobs.js loaded");
 let jobs = [];
 
 const jobsContainer = document.getElementById("jobsContainer");
@@ -9,7 +11,7 @@ const typeFilter = document.getElementById("typeFilter");
 
 async function loadJobs() {
     try {
-       const response = await fetch("https://job-recruitment-portal-1.onrender.com/api/jobs");
+       const response = await fetch("https://job-recruitment-portal-production.up.railway.app/api/jobs");
         const data = await response.json();
 
         if (data.success) {
@@ -99,3 +101,5 @@ function viewJob(id){
     localStorage.setItem("selectedJob", id);
     window.location.href = "job-details.html";
 }
+// Load jobs when page opens
+loadJobs();
