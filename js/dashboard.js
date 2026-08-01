@@ -9,7 +9,7 @@ async function loadDashboard() {
     if (!currentUser) return;
 
     try {
-        const response = await fetch(`http://localhost:3000/api/jobs/employer-jobs/${currentUser.id}`);
+        const response = await fetch(`https://job-recruitment-portal-1.onrender.com/api/jobs/employer-jobs/${currentUser.id}`);
         const data = await response.json();
 
         const employerJobs = data.success ? (data.jobs || []) : [];

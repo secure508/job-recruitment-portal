@@ -99,21 +99,3 @@ function viewJob(id){
     localStorage.setItem("selectedJob", id);
     window.location.href = "job-details.html";
 }
-
-async function loadJobs() {
-    try {
-        const response = await fetch("https://job-recruitment-portal-1.onrender.com/api/jobs");
-        const data = await response.json();
-
-        if (data.success) {
-            jobs = data.jobs || [];
-            populateFilters();
-            displayJobs(jobs);
-        } else {
-            jobsContainer.innerHTML = "<h2>Unable to load jobs.</h2>";
-        }
-    } catch (error) {
-        console.error(error);
-        jobsContainer.innerHTML = "<h2>Unable to connect to the server.</h2>";
-    }
-}

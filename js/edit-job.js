@@ -2,7 +2,7 @@ const id = Number(localStorage.getItem("editJobId"));
 
 async function loadJob() {
     try {
-        const response = await fetch(`http://localhost:3000/api/jobs/details/${id}`);
+        const response = await fetch(`https://job-recruitment-portal-1.onrender.com/api/jobs/details/${id}`);
         const data = await response.json();
 
         if (data.success && data.job) {
@@ -26,7 +26,7 @@ async function loadJob() {
                     deadline: job.deadline
                 };
 
-                const updateResponse = await fetch(`http://localhost:3000/api/jobs/update/${id}`, {
+                const updateResponse = await fetch(`https://job-recruitment-portal-1.onrender.com/api/jobs/update/${id}`, {
                     method: "PUT",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(updatedJob)

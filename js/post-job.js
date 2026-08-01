@@ -46,7 +46,7 @@ if (jobForm) {
 
         try {
 
-            const response = await fetch("http://localhost:3000/api/jobs", {
+            const response = await fetch("https://job-recruitment-portal-1.onrender.com//api/jobs", {
 
                 method: "POST",
 

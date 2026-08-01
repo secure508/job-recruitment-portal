@@ -20,7 +20,7 @@ if (loginForm) {
 
             try {
 
-                const response = await fetch("http://localhost:3000/api/employers/login", {
+                const response = await fetch("https://job-recruitment-portal-1.onrender.com/api/employers/login", {
 
                     method: "POST",
 
@@ -201,7 +201,7 @@ if (employerForm) {
 
         try {
 
-            const response = await fetch("http://localhost:3000/api/employers/register", {
+            const response = await fetch("https://job-recruitment-portal-1.onrender.com/api/employers/register", {
 
                 method: "POST",
 

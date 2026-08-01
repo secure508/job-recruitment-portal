@@ -32,7 +32,7 @@ async function loadEmployerJobs() {
     if (!currentUser) return;
 
     try {
-        const response = await fetch(`http://localhost:3000/api/jobs/employer-jobs/${currentUser.id}`);
+        const response = await fetch(`https://job-recruitment-portal-1.onrender.com/api/jobs/employer-jobs/${currentUser.id}`);
         const data = await response.json();
 
         if (data.success) {
@@ -55,7 +55,7 @@ searchInput.addEventListener("keyup",()=>{
 async function deleteJob(id){
     if(confirm("Delete this job?")){
         try {
-            const response = await fetch(`http://localhost:3000/api/jobs/remove/${id}`, { method: "DELETE" });
+            const response = await fetch(`https://job-recruitment-portal-1.onrender.com/api/jobs/remove/${id}`, { method: "DELETE" });
             const data = await response.json();
             if (data.success) {
                 location.reload();

@@ -16,7 +16,7 @@ if (!jobId || Number.isNaN(jobId)) {
 } else {
     async function loadJob() {
         try {
-            const response = await fetch(`http://localhost:3000/api/jobs/details/${jobId}`);
+            const response = await fetch(`https://job-recruitment-portal-1.onrender.com/api/jobs/details/${jobId}`);
             const data = await response.json();
 
             if (data.success && data.job) {
